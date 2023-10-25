@@ -1,0 +1,226 @@
+:root{
+    /* Primary */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+/* ## Gradients */
+/* background */
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    /* Circle */
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+
+    /* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* FONT */
+    --Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--Family);
+}
+body{
+    background-color: var(--Pale-blue);
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 30rem;
+    background-color: var(--White);
+    border-radius: 30px;
+    margin-bottom: 75px;
+}
+
+
+
+
+
+/* LEFT STYLING  */
+
+.left{
+    height: 20rem;
+    background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    width: 50%;
+}
+
+.left h3{
+    color: var(--Light-lavender);
+
+}
+
+
+
+.left .circle{
+    width: 7rem;
+    height: 7rem;
+    background-image: linear-gradient(var(--Violet-blue), var(--Persian-blue));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.left .circle h4{
+    font-size: 2.5rem;
+    margin-bottom: -20px;
+    font-weight: bolder;
+    color: var(--White);
+}
+.left .circle p{
+    font-size: 0.7rem;
+    margin-bottom: -20px;
+    font-weight: bolder;
+    color: var(--Light-lavender);
+}
+
+.left .great{
+    color: var(--White);
+    font-weight: bold;
+    margin: 20px auto;
+    font-size: 1.5rem;
+}
+
+.left .para{
+    font-size: 0.9rem;
+    width: 100%;
+    color: var(--Pale-blue);
+}
+
+
+/* RIGHT STYLING */
+
+.right{
+    height: 20rem;
+    border-radius: 0px 30px 30px 0px;
+    padding: 30px;
+    width: 50%;
+}
+
+.right h3{
+    margin-bottom: 30px;
+    color: var(--Dark-gray-blue);
+}
+.right ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+}
+
+.right ul li div{
+    display: flex;
+}
+
+.right ul li:nth-child(1) div p{
+    color: var(--Light-red);
+}
+.right ul li:nth-child(2) div p{
+    color: var(--Orangey-yellow);
+}
+.right ul li:nth-child(3) div p{
+    color: var(--Green-teal);
+}
+.right ul li:nth-child(4) div p{
+    color: var(--Cobalt-blue);
+}
+
+  
+
+.right ul li p{
+    margin-left: 5px;
+    color: var(--Light-lavender);
+}
+.right ul li p span{
+    font-weight: bolder;
+    color: var(--Dark-gray-blue);
+
+}
+
+
+.right button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: 100%;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    font-size: 1.2rem;
+}
+.right button:hover{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: 100%;
+    background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    color: var(--White);
+}
+
+
+@media screen and (max-width: 500px) {
+    .wrapper{
+        margin-top: 0rem;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--White);
+        border-radius: 30px;
+    }
+
+    .left{
+        background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+        border-radius: 0px 0px 30px 30px;
+        padding: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .right{
+        height: 100%;
+        border-radius: 30px;
+        padding: 30px;
+        width: 100%;
+    }
+    
+    .left .para{
+        font-size: 1.3rem;
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .right ul li{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    
+    }
+    
+}
